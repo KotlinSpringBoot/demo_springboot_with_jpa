@@ -4,11 +4,12 @@ import javax.persistence.*;
 
 
 @Entity
+@Table(name = "user_roles")
 public class UserRoles {
 
-    @Column(name="user_id")
+    @Column(name = "user_id")
     private long userId;
-    @Column(name="roles_id")
+    @Column(name = "roles_id")
     private long rolesId;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
